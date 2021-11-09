@@ -20,7 +20,7 @@ function Nav() {
           </div>
         </nav>
       </div>
-      <div className={actMenu ? "menu-mobile-container" : "menu"}>
+      <div className={actMenu ? "menu-mobile-container" : "menu"} id="menu">
         <div className="ul-container">
           <ul className="menu-active-mobile">
             {menuItems.map((link, index) => {
