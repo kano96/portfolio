@@ -22,23 +22,21 @@ function Nav() {
           </div>
         </nav>
       </div>
-      {actMenu && (
-        <div className="menu-mobile-container" id="menu">
-          <div className="ul-container">
-            <ul className="menu-active-mobile">
-              {menuItems.map((link, index) => {
-                return (
-                  <li key={index} onClick={handleOnClick}>
-                    <a href={link.url} className={link.cName}>
-                      {link.name}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+      <div className={actMenu ? "menu-mobile-container" : "menu"} id="menu">
+        <div className="ul-container">
+          <ul className="menu-active-mobile">
+            {menuItems.map((link, index) => {
+              return (
+                <li key={index} onClick={handleOnClick}>
+                  <a href={link.url} className={link.cName}>
+                    {link.name}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
         </div>
-      )}
+      </div>
     </div>
   );
 }

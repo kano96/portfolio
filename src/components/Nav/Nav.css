@@ -36,6 +36,9 @@
   padding: 1rem;
   display: table;
 }
+.menu {
+  display: none;
+}
 
 .menu-mobile-container {
   position: relative;
