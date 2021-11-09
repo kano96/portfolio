@@ -3,6 +3,9 @@
   background-color: var(--blue);
   margin: 0;
 }
+.banner-container {
+  position: relative;
+}
 .contact-icons {
   display: flex;
   justify-content: center;
@@ -90,10 +93,6 @@ li a {
 }
 .info {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 @media screen and (min-width: 483px) {
   .title-container h1 {
@@ -111,43 +110,54 @@ li a {
   .banner-container {
     position: relative;
     width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 75px;
+  }
+  .title-container h1 {
+    font-size: 54px;
   }
   .info {
     position: absolute;
-    max-width: 53%;
-    margin: auto;
   }
   .main-container {
-    padding: 100px 15px;
+    padding: 100px 75px;
   }
   .action-btn,
   .contact-icons,
-  .title-container {
+  .title-container,
+  .descr {
+    justify-content: center;
+  }
+  .descr p {
+    text-align: center;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .info {
+    /* max-width: 960px; */
+    grid-column: 1;
+  }
+  .action-btn,
+  .contact-icons,
+  .title-container,
+  .descr {
     justify-content: start;
   }
   .descr p {
     text-align: start;
     padding: 0;
   }
-}
-@media screen and (min-width: 992px) {
-  .info {
-    max-width: 960px;
-  }
-  .action-btn,
-  .contact-icons,
-  .title-container {
-    margin-left: 204px;
-  }
-  .banner-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+
   .profile-img {
-    display: grid;
+    display: flex;
     grid-column: 2;
+    justify-self: center;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .banner-container {
+    padding: 0 204px;
   }
 }

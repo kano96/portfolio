@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Mainview.css";
+import img from "../assets/profile-img.png";
 const title = "I'm Kevin Torres";
 function Mainview() {
   const [type, setType] = useState("");
@@ -76,7 +77,7 @@ function Mainview() {
           </div>
         </div>
         <div className="profile-img">
-          <img src="../assets/profile-img.png" alt="profile-kev" />
+          <img src={img} alt="profile-kev" />
         </div>
       </div>
     </section>
