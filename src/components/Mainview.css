@@ -1,0 +1,97 @@
+.main-container {
+  height: 86vh;
+  background-color: var(--blue);
+  margin: 0;
+}
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+}
+.icons-list {
+  display: flex;
+  margin-top: 100px;
+  gap: 13px;
+  padding-left: 0;
+  margin-bottom: 16px;
+}
+.icons-list li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+}
+.icons-list li:hover {
+  background-color: var(--red);
+}
+li a {
+  padding: 13px;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.title-container h1 {
+  text-align: center;
+}
+.descr {
+  display: flex;
+  justify-content: center;
+}
+
+.descr p {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  color: white;
+  text-align: center;
+  padding: 0 15px;
+}
+.action-btn {
+  display: flex;
+  justify-content: center;
+}
+.port-btn a {
+  padding: 13px 20px;
+}
+.port-btn {
+  background-color: var(--dark-blue);
+  border: solid 2px var(--red);
+  padding: 13px 20px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  border-radius: 50px;
+}
+.port-btn:hover {
+  background-color: var(--red);
+}
+.blinking-cursor:after {
+  content: "|";
+  color: black;
+  font-weight: 500;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 483px) {
+  .title-container h1 {
+    overflow: hidden;
+    border-right: 5px solid transparent;
+    white-space: nowrap;
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end 7;
+  }
+  .descr p {
+    max-width: 520px;
+  }
+}
