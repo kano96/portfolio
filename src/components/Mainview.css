@@ -149,7 +149,14 @@ li a {
     text-align: start;
     padding: 0;
   }
-
+  .contact-icons {
+    font-size: 30px;
+  }
+  .icons-list li {
+    width: 75px;
+    height: 75px;
+    gap: 13px;
+  }
   .profile-img {
     display: flex;
     grid-column: 2;
