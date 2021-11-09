@@ -62,7 +62,7 @@
     display: flex;
     flex-wrap: nowrap;
     background-color: var(--dark-blue);
-    height: 12.56vh;
+    height: 13vh;
   }
   .menu {
     display: flex;

@@ -14,7 +14,9 @@
   gap: 13px;
   padding-left: 0;
   margin-bottom: 16px;
+  background-color: var(--blue);
 }
+
 .icons-list li {
   width: 50px;
   height: 50px;
@@ -77,13 +79,22 @@ li a {
   font-weight: 500;
   animation: blink 1s step-start infinite;
 }
+.profile-img {
+  display: none;
+}
 
 @keyframes blink {
   50% {
     opacity: 0;
   }
 }
-
+.info {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 @media screen and (min-width: 483px) {
   .title-container h1 {
     overflow: hidden;
@@ -93,5 +104,50 @@ li a {
   }
   .descr p {
     max-width: 520px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-container {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .info {
+    position: absolute;
+    max-width: 53%;
+    margin: auto;
+  }
+  .main-container {
+    padding: 100px 15px;
+  }
+  .action-btn,
+  .contact-icons,
+  .title-container {
+    justify-content: start;
+  }
+  .descr p {
+    text-align: start;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .info {
+    max-width: 960px;
+  }
+  .action-btn,
+  .contact-icons,
+  .title-container {
+    margin-left: 204px;
+  }
+  .banner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .profile-img {
+    display: grid;
+    grid-column: 2;
   }
 }
