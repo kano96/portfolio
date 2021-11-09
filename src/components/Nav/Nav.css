@@ -47,6 +47,7 @@
   display: flex;
   justify-content: center;
   background-color: var(--dark-blue);
+  z-index: 5;
 }
 
 .ul-container {
