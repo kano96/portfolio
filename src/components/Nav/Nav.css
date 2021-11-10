@@ -35,6 +35,8 @@
   font-weight: 500;
   padding: 1rem;
   display: table;
+  width: 100%;
+  transition: color 0.3s ease;
 }
 .menu {
   display: none;
@@ -56,7 +58,13 @@
   height: fit-content;
   margin-bottom: 15px;
 }
-
+.nav-link:hover {
+  color: var(--red);
+  border-bottom: 2px solid white;
+}
+/* .nav-link: {
+  background-color: var(--blue);
+} */
 @media screen and (min-width: 992px) {
   .allnav {
     display: flex;
@@ -81,8 +89,5 @@
   .nav {
     width: auto;
     margin-left: 100px;
-  }
-  .nav-link:hover {
-    color: var(--red);
   }
 }

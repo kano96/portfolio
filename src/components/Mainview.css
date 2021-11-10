@@ -58,23 +58,25 @@ li a {
   text-align: center;
   padding: 0 15px;
 }
-.action-btn {
+.action-btns {
   display: flex;
   justify-content: center;
+  gap: 5px;
 }
 .port-btn a {
-  padding: 13px 20px;
+  padding: 13px 30px;
 }
 .port-btn {
-  background-color: var(--dark-blue);
-  border: solid 2px var(--red);
-  padding: 13px 20px;
+  background-color: var(--red);
+  border: solid 0.5px var(--red);
+  padding: 8px 12px;
   margin-bottom: 15px;
   font-size: 15px;
-  border-radius: 50px;
+  border-radius: 25px;
+  text-align: center;
 }
 .port-btn:hover {
-  background-color: var(--red);
+  background-color: rgb(230, 102, 102);
 }
 .blinking-cursor:after {
   content: "|";
@@ -104,6 +106,10 @@ li a {
   .descr p {
     max-width: 520px;
   }
+  .port-btn {
+    padding: 8px 12px;
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -123,7 +129,7 @@ li a {
   .main-container {
     padding: 100px 75px;
   }
-  .action-btn,
+  .action-btns,
   .contact-icons,
   .title-container,
   .descr {
@@ -133,13 +139,17 @@ li a {
     text-align: center;
     padding: 0;
   }
+  .port-btn {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
 }
 @media screen and (min-width: 1100px) {
   .info {
     /* max-width: 960px; */
     grid-column: 1;
   }
-  .action-btn,
+  .action-btns,
   .contact-icons,
   .title-container,
   .descr {
@@ -162,9 +172,16 @@ li a {
     grid-column: 2;
     justify-self: center;
   }
+  .action-btns {
+    gap: 15px;
+  }
 }
 @media screen and (min-width: 1400px) {
   .banner-container {
     padding: 0 204px;
+  }
+  .port-btn {
+    padding: 13px 20px;
+    font-size: 15px;
   }
 }

@@ -70,9 +70,14 @@ function Mainview() {
               ReactJS and NodeJs
             </p>
           </div>
-          <div className="action-btn">
+          <div className="action-btns">
             <button className="port-btn">
               <a href="#portfolio">My Portfolio</a>
+            </button>
+            <button className="port-btn cv-btn">
+              <a download href="#">
+                Download CV
+              </a>
             </button>
           </div>
         </div>

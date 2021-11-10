@@ -1,0 +1,22 @@
+.expert-cont {
+  text-align: center;
+}
+.skills-cont ul {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skill-icon li {
+  position: relative;
+  padding-bottom: 15px;
+}
+.skill-icon {
+  height: 5em;
+}
+
+.label {
+  position: absolute;
+}

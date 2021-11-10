@@ -27,7 +27,7 @@ function Nav() {
           <ul className="menu-active-mobile">
             {menuItems.map((link, index) => {
               return (
-                <li key={index} onClick={handleOnClick}>
+                <li key={index}>
                   <a href={link.url} className={link.cName}>
                     {link.name}
                   </a>

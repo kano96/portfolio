@@ -1,0 +1,19 @@
+.Skills-section {
+  padding: 130px 15px;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  height: 87vh;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--dark-blue);
+}
+.info {
+  text-align: center;
+  color: white;
+  grid-row: 1;
+}
+.expert-section {
+  grid-row: 2;
+}
