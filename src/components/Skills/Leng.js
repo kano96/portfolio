@@ -6,6 +6,7 @@ import react from "../../assets/skills/react.png";
 import redux from "../../assets/skills/redux.png";
 import node from "../../assets/skills/node.png";
 import express from "../../assets/skills/express.png";
+import jest from "../../assets/skills/jest.png";
 
 export const leng = [
   {
@@ -21,4 +22,5 @@ export const leng = [
   { url: redux, label: "Redux", class: "skill-icon", labelclass: "label" },
   { url: node, label: "NodeJs", class: "skill-icon", labelclass: "label" },
   { url: express, label: "Express", class: "skill-icon", labelclass: "label" },
+  { url: jest, label: "Jest", class: "skill-icon", labelclass: "label" },
 ];
