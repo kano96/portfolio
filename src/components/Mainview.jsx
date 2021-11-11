@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./Mainview.css";
 import img from "../assets/profile-img.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const title = "I'm Kevin Torres";
 function Mainview() {
   const [type, setType] = useState("");
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   useEffect(() => {
     const nextType = title.slice(0, type.length + 1);
     if (nextType === type) return;
@@ -16,7 +22,7 @@ function Mainview() {
   return (
     <section className="main-container">
       <div className="banner-container">
-        <div className="info">
+        <div className="info" data-aos="fade-right">
           <div className="contact-icons">
             <ul className="icons-list">
               <li className="linkedin">
@@ -81,7 +87,7 @@ function Mainview() {
             </button>
           </div>
         </div>
-        <div className="profile-img">
+        <div className="profile-img" data-aos="fade-left">
           <img src={img} alt="profile-kev" />
         </div>
       </div>
