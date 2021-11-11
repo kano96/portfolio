@@ -36,10 +36,8 @@
   z-index: 1;
   cursor: pointer;
 }
-.skill-content ::after {
-  content: "hola";
-  top: -30px;
-}
-.skill-icon:hover .skill-content {
-  visibility: visible;
+@media screen and (max-width: 992px) {
+  .skill-icon {
+    height: 4em;
+  }
 }
