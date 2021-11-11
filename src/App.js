@@ -6,6 +6,8 @@ import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -55,6 +57,8 @@ function App() {
         ></i>
       </div>
       <Portfolio />
+      <Contact />
+      <Footer />
     </div>
   );
 }

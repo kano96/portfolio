@@ -1,0 +1,10 @@
+.contact-container {
+  height: 80vh;
+  background-color: var(--dark-blue);
+}
+.contact-container .content {
+  padding: 100px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

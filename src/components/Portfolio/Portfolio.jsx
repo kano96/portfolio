@@ -7,7 +7,7 @@ function Portfolio() {
   return (
     <div id="portfolio" className="portfolio-cont">
       <div className="title" data-aos="fade-up">
-        <h1>PORTFOLIO</h1>
+        <h1>Portfolio</h1>
       </div>
       <div className="projects" data-aos="fade-up">
         {data.map((project) => (

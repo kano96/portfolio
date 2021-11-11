@@ -20,7 +20,7 @@ function Project({ title, url, img, desc, stack, repo }) {
         <p className="desc">{desc}</p>
         <div className="stack">
           {stack.map((tec) => (
-            <button value={tec} />
+            <div key={tec}>{tec}</div>
           ))}
         </div>
       </div>

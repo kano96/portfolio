@@ -9,7 +9,8 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
 }
-.card:hover, .card:active {
+.card:hover,
+.card:active {
   height: 420px;
 }
 .card .img-box {
@@ -39,7 +40,7 @@
 .card .content .stack {
   visibility: hidden;
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .card:hover .content .desc,
 .card:active .content .desc,
@@ -47,5 +48,17 @@
 .card:active .content .stack {
   visibility: visible;
   opacity: 1;
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
+}
+.stack {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-top: 20px;
+}
+.stack div {
+  font-size: 10px;
 }

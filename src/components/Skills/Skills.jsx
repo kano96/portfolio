@@ -6,7 +6,7 @@ function Skills() {
   return (
     <section className="Skills-section" id="skills">
       <div className="info">
-        <h1 data-aos="fade-down">SKILLSET</h1>
+        <h1 data-aos="fade-down">Skillset</h1>
       </div>
       <div className="expert-section" data-aos="fade-up">
         <Expert />
