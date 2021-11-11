@@ -1,0 +1,23 @@
+.portfolio-cont {
+  height: auto;
+  padding: 50px 50px 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  flex-wrap: wrap;
+}
+.portfolio-cont .title {
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.projects {
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
