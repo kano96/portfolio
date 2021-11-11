@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   height: 13vh;
-  width: 100%;
+  max-width: 100vw;
   z-index: 50;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 }
@@ -14,6 +14,7 @@
   align-items: center;
   width: 100%;
   transition: all 0.3s ease;
+  overflow-x: hidden;
 }
 .Nav-container-active {
   background-color: var(--dark-blue);
@@ -26,7 +27,8 @@
   height: 13vh;
   z-index: 50;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
+
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -81,9 +83,7 @@
   color: var(--red);
   border-bottom: 2px solid white;
 }
-/* .nav-link: {
-  background-color: var(--blue);
-} */
+
 @media screen and (min-width: 992px) {
   .allnav {
     display: flex;
@@ -93,6 +93,7 @@
   }
   .Nav-container-active {
     flex-wrap: nowrap;
+    max-width: 100%;
   }
   .menu {
     display: flex;

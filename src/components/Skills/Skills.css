@@ -1,13 +1,14 @@
 .Skills-section {
   padding: 130px 15px;
   display: grid;
-  grid-template-rows: 0.5fr 1fr;
+  grid-template-rows: 0.25fr 0.5fr;
   height: 87vh;
   width: 100%;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: var(--dark-blue);
+  gap: 50px;
 }
 .info {
   text-align: center;
@@ -16,4 +17,5 @@
 }
 .expert-section {
   grid-row: 2;
+  align-items: center;
 }

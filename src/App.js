@@ -2,6 +2,7 @@ import "./App.css";
 import Nav from "./components/Nav/Nav";
 import Mainview from "./components/Mainview";
 import Skills from "./components/Skills/Skills";
+import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           }}
         ></i>
       </div>
+      <Portfolio />
     </div>
   );
 }

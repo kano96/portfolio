@@ -122,9 +122,6 @@ li a {
   .title-container h1 {
     font-size: 54px;
   }
-  .info {
-    position: absolute;
-  }
   .main-container {
     padding: 100px 75px;
   }
@@ -132,10 +129,10 @@ li a {
   .contact-icons,
   .title-container,
   .descr {
-    justify-content: center;
+    justify-content: flex-start;
   }
   .descr p {
-    text-align: center;
+    text-align: start;
     padding: 0;
   }
   .port-btn {
@@ -166,13 +163,17 @@ li a {
     height: 75px;
     gap: 13px;
   }
+
+  .action-btns {
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 1134px) {
   .profile-img {
     display: flex;
     grid-column: 2;
     justify-self: center;
-  }
-  .action-btns {
-    gap: 15px;
   }
 }
 @media screen and (min-width: 1400px) {

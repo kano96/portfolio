@@ -11,24 +11,8 @@ function Nav() {
     setactMenu(!actMenu);
   };
 
-  // Actuación de la barra de navegación en scroll
-  const [isVisible, setIsVisible] = useState(false);
-
-  const toggleVisibility = () => {
-    if (window.pageYOffset > 400) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
-  // Efecto para escuchar el scroll
-  useEffect(() => {
-    window.addEventListener("scroll", toggleVisibility);
-  }, []);
-
   return (
-    <div className={isVisible ? "Nav-container-active" : "allnav"} id="top">
+    <div className="allnav" id="top">
       <div className="Nav-container">
         <nav className="nav">
           <div className="logo">
