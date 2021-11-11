@@ -10,7 +10,7 @@ const dataprojects = [
     stack: ["ReactJS", "Redux", "CSS Modules", "React-Hooks", "React Router"],
   },
   {
-    title: "Movies Description",
+    title: "Movies App",
     desc: "",
     img: portfolio,
     repo: "",
@@ -19,9 +19,9 @@ const dataprojects = [
   },
   {
     title: "My Portfolio",
-    desc: "This portfolio was made using react, it shows my projects, skills, ways to contact me and a form to send me an e-mail. It´s made using only functional components",
+    desc: "This portfolio was made using react, it shows my projects, skills, ways to contact me and a form to send me an e-mail. It's made using only functional components",
     img: portfolio,
-    repo: "",
+    repo: "https://github.com/kano96/portfolio",
     url: "#top",
     stack: ["ReactJS", "Semantic UI", "CSS Modules"],
   },

@@ -1,7 +1,7 @@
 .card {
   position: relative;
   max-width: 300px;
-  background-color: var(--red);
+  background-color: #258ea6;
   margin: 30px 10px;
   padding: 20px 15px;
   height: 215px;
@@ -9,7 +9,7 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
 }
-.card:hover {
+.card:hover, .card:active {
   height: 420px;
 }
 .card .img-box {
@@ -42,11 +42,10 @@
   transition: 0.3s ease-in-out;
 }
 .card:hover .content .desc,
-.card:hover .content .stack {
+.card:active .content .desc,
+.card:hover .content .stack,
+.card:active .content .stack {
   visibility: visible;
   opacity: 1;
   transition-delay: 0.3s;
-}
-
-@media screen and (max-width: 992px) {
 }

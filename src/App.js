@@ -4,9 +4,14 @@ import Mainview from "./components/Mainview";
 import Skills from "./components/Skills/Skills";
 import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
 
   const toggleVisibility = () => {
     if (window.pageYOffset > 400) {

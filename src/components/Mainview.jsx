@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Mainview.css";
 import img from "../assets/profile-img.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const title = "I'm Kevin Torres";
 function Mainview() {
   const [type, setType] = useState("");
-  useEffect(() => {
-    AOS.init({ duration: 3000 });
-  }, []);
+
   useEffect(() => {
     const nextType = title.slice(0, type.length + 1);
     if (nextType === type) return;

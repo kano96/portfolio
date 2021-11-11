@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Projects.css";
 
 function Project({ title, url, img, desc, stack, repo }) {
-  const [show, setShow] = useState(false);
-
-  const handleOnClick = (e) => {};
   return (
     <div className="card">
       <div className="img-box">
@@ -20,9 +17,6 @@ function Project({ title, url, img, desc, stack, repo }) {
             <i class="fas fa-external-link-alt"></i>
           </a>
         </div>
-        <p className="ShowDesc" onClick={handleOnClick}>
-          Show Description
-        </p>
         <p className="desc">{desc}</p>
         <div className="stack">
           {stack.map((tec) => (

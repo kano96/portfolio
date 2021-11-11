@@ -6,10 +6,10 @@ import Project from "./Projects";
 function Portfolio() {
   return (
     <div id="portfolio" className="portfolio-cont">
-      <div className="title">
+      <div className="title" data-aos="fade-up">
         <h1>PORTFOLIO</h1>
       </div>
-      <div className="projects">
+      <div className="projects" data-aos="fade-up">
         {data.map((project) => (
           <Project
             key={project.title}
