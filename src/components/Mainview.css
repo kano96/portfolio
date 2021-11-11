@@ -1,7 +1,6 @@
 .main-container {
   height: 87vh;
   background-color: var(--blue);
-  margin: 0;
 }
 .banner-container {
   position: relative;

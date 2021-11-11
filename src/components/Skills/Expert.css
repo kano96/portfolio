@@ -7,16 +7,39 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
-.skill-icon li {
+.skills-cont ul li {
   position: relative;
   padding-bottom: 15px;
 }
+
 .skill-icon {
   height: 5em;
+  cursor: pointer;
+}
+.skill-icon:hover {
+  filter: brightness(1.5);
 }
 
-.label {
+.skill-content {
   position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.548);
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+  cursor: pointer;
+}
+.skill-content ::after {
+  content: "hola";
+  top: -30px;
+}
+.skill-icon:hover .skill-content {
+  visibility: visible;
 }

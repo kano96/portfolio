@@ -2,15 +2,21 @@
   display: flex;
   flex-wrap: wrap;
   height: 13vh;
+  width: 100%;
+  z-index: 50;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
 }
+
 .Nav-container {
   background-color: var(--dark-blue);
+
   margin: 0;
   padding: 0.9375rem;
   display: flex;
   align-items: center;
   width: 100%;
 }
+
 .nav {
   padding: 0.9375rem;
   display: flex;
@@ -75,6 +81,7 @@
   .menu {
     display: flex;
     margin-right: 100px;
+    z-index: 5;
   }
   ul,
   .ul-container {

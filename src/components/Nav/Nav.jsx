@@ -8,6 +8,7 @@ function Nav() {
   const handleOnClick = (e) => {
     setactMenu(!actMenu);
   };
+
   return (
     <div className="allnav" id="top">
       <div className="Nav-container">

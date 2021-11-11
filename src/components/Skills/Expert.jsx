@@ -1,7 +1,7 @@
 import React from "react";
 import "./Expert.css";
 import { leng } from "./Leng";
-
+import { Popup } from "semantic-ui-react";
 function Expert() {
   return (
     <div class="expert-cont">
@@ -11,8 +11,13 @@ function Expert() {
           {leng.map((skill) => {
             return (
               <li>
-                <img src={skill.url} alt="" className={skill.class} />
-                <span className={skill.labelclass}>{skill.label}</span>
+                <Popup
+                  content={skill.label}
+                  trigger={
+                    <img src={skill.url} alt="" className={skill.class} />
+                  }
+                  position="top center"
+                />
               </li>
             );
           })}
