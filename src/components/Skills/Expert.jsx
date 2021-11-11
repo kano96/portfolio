@@ -10,7 +10,7 @@ function Expert() {
         <ul>
           {leng.map((skill) => {
             return (
-              <li>
+              <li key={skill.label}>
                 <Popup
                   content={skill.label}
                   trigger={
