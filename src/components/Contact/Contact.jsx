@@ -20,14 +20,19 @@ function Contact() {
               <input type="text" placeholder="Your Name" required name="name" />
             </div>
             <div className="row50">
-              <input type="email" placeholder="Your Email" name="email" />
+              <input
+                type="email"
+                placeholder="Your Email"
+                required
+                name="email"
+              />
             </div>
             <div className="row100">
-              <input type="text" placeholder="Your Subject" />
+              <input type="text" placeholder="Your Subject" name="_subject" />
             </div>
             <div className="row100">
               <textarea
-                name=""
+                name="message"
                 id="message"
                 required
                 placeholder="Your message"
