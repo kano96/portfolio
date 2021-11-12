@@ -1,5 +1,5 @@
 .contact-container {
-  height: 80vh;
+  height: fit-content;
   background-color: var(--dark-blue);
 }
 .contact-container .content {
@@ -7,4 +7,71 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+form {
+  width: 95%;
+  max-width: 860px;
+}
+.formulario {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.row50 {
+  position: relative;
+  width: 100%;
+}
+.row50 input {
+  position: relative;
+  width: 100%;
+  padding: 30px 15px;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+}
+.row100 {
+  width: 100%;
+  position: relative;
+}
+.row100 input {
+  width: 100%;
+  padding: 30px 15px;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+}
+.row100 textarea {
+  width: 100%;
+  background-color: var(--blue);
+  border: none;
+  padding: 20px 15px;
+  resize: none;
+  border-radius: 25px;
+  font-size: 1em;
+}
+
+.button button {
+  padding: 18px 50px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: var(--red);
+  border: none;
+  border-radius: 50px;
+  font-size: 1em;
+}
+.button button:hover {
+  filter: brightness(1.5);
+}
+
+@media screen and (min-width: 992px) {
+  .row50 {
+    width: calc(50% - 10px);
+  }
 }
