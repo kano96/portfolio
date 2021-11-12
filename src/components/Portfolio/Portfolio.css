@@ -1,6 +1,6 @@
 .portfolio-cont {
   height: auto;
-  padding: 50px 50px 140px;
+  padding: 100px 50px 140px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,5 +19,5 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 20px 30px 30px;
 }

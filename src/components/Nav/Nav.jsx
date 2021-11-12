@@ -11,6 +11,12 @@ function Nav() {
     setactMenu(!actMenu);
   };
 
+  //Nav to sticky on scroll
+  window.addEventListener("scroll", () => {
+    const header = document.getElementById("top");
+    header.classList.toggle("fixed", window.scrollY > 0);
+  });
+
   return (
     <div className="allnav" id="top">
       <div className="Nav-container">
