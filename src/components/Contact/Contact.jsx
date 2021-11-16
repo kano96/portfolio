@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div className="contact-container" id="contact">
       <div className="content">
-        <div className="title">
+        <div className="title" data-aos="fade-up">
           <h1 style={{ fontSize: "35px" }}>Send me a message</h1>
           <p>
             Got a question or proposal, or just want to say hello? Go ahead.
@@ -14,6 +14,7 @@ function Contact() {
         <form
           action="https://formsubmit.co/kevintorres996@hotmail.com"
           method="POST"
+          data-aos="fade-up"
         >
           <div className="formulario">
             <div className="row50">

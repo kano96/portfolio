@@ -12,7 +12,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
-    AOS.init({ duration: 3000 });
+    AOS.init({ duration: 2000 });
   }, []);
 
   const toggleVisibility = () => {

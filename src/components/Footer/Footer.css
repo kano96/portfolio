@@ -1,0 +1,33 @@
+.Footer {
+  height: 25vh;
+  width: 100%;
+  background-color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Footer .contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-list-container {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 10px;
+  background-color: transparent;
+}
+.contact-list-container li {
+  background-color: var(--blue);
+  border-radius: 25px;
+  transition: all 0.4s ease;
+}
+.contact-list-container li:hover {
+  background-color: var(--red);
+  transform: translateY(-5px);
+}
+.footer-text {
+  padding-top: 15px;
+}
