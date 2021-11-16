@@ -8,11 +8,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import About from "./components/About/About";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    AOS.init({ duration: 1000 });
   }, []);
 
   const toggleVisibility = () => {
@@ -39,6 +40,7 @@ function App() {
     <div className="App">
       <Nav />
       <Mainview />
+      <About />
       <Skills />
       <div
         onClick={scrollToTop}

@@ -1,0 +1,23 @@
+.About-container {
+  height: 40vh;
+  width: 100%;
+  background-color: var(--dark-blue);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.info-about {
+  max-width: 1000px;
+}
+.info-about h1 {
+  padding-top: 50px;
+}
+.p {
+  padding-top: 50px;
+  letter-spacing: 0.5px;
+  font-size: large;
+}
+.About-container a {
+  color: var(--red);
+}
