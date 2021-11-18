@@ -1,21 +1,31 @@
 import portfolio from "../../assets/project-img/portfolio.png";
+import cardgame from "../../assets/project-img/cardgame.png";
+import citas from "../../assets/project-img/citas.png";
 
 const dataprojects = [
+  // {
+  //   title: "GOT houses",
+  //   desc: "",
+  //   img: portfolio,
+  //   repo: "",
+  //   url: "",
+  //   stack: ["ReactJS", "Redux", "CSS Modules", "React-Hooks", "React Router"],
+  // },
+  // {
+  //   title: "Movies App",
+  //   desc: "",
+  //   img: portfolio,
+  //   repo: "",
+  //   url: "",
+  //   stack: ["ReactJS", "Redux", "CSS Modules", "React-Hooks", "React Router"],
+  // },
   {
-    title: "GOT houses",
-    desc: "",
-    img: portfolio,
-    repo: "",
-    url: "",
-    stack: ["ReactJS", "Redux", "CSS Modules", "React-Hooks", "React Router"],
-  },
-  {
-    title: "Movies App",
-    desc: "",
-    img: portfolio,
-    repo: "",
-    url: "",
-    stack: ["ReactJS", "Redux", "CSS Modules", "React-Hooks", "React Router"],
+    title: "Patient Manager",
+    desc: "This web app was made using ReactJS, on it you can add appointments with date, hour, symptoms, etc. The appointments are saved in the local storage, so you can't lose them.",
+    img: citas,
+    repo: "https://github.com/kano96/patient-manager",
+    url: "https://appointments-manager-96.netlify.app/",
+    stack: ["ReactJS", "CSS Modules", "React-Hooks"],
   },
   {
     title: "My Portfolio",
@@ -28,10 +38,10 @@ const dataprojects = [
   {
     title: "Memory Card Game",
     desc: "",
-    img: portfolio,
-    repo: "",
+    img: cardgame,
+    repo: "https://github.com/kano96/cardgame",
     url: "",
-    stack: [],
+    stack: ["ReactJS", "React Hooks", "CSS Modules  "],
   },
   //   { title: "", desc: "", img: "", repo: "", url: "", stack: [] },
   //   { title: "", desc: "", img: "", repo: "", url: "", stack: [] },
