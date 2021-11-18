@@ -1,13 +1,16 @@
-nav {
+.navbar {
   position: fixed;
   top: 0%;
   width: 100%;
-  height: 50px;
+  height: 80px;
   z-index: 100;
+}
+.navbar.active {
+  background-color: var(--dark-blue);
 }
 .list {
   list-style-type: none;
-
+  margin-right: 50px;
   height: 100%;
   display: flex;
   justify-content: flex-end;
@@ -25,6 +28,9 @@ nav img {
   text-transform: uppercase;
   cursor: pointer;
 }
+.items:hover a {
+  color: var(--red);
+}
 .btn {
   display: none;
   position: absolute;
@@ -34,6 +40,10 @@ nav img {
   background-color: transparent;
   border: none;
   font-size: 25px;
+}
+.items a {
+  padding: 0;
+  margin: 0;
 }
 @media screen and (max-width: 700px) {
   .list {
