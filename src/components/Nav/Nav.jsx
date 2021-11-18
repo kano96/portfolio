@@ -32,6 +32,7 @@ function Nav() {
 
   return (
     <nav className={navBar ? "navbar active" : "navbar"}>
+      <img src={logo} alt="kev_logo" />
       {(actMenu || screenW > 700) && (
         <ul className="list">
           <li className="items">
@@ -44,7 +45,7 @@ function Nav() {
             <a href="#skills">Skills</a>
           </li>
           <li className="items">
-            <a href="#portfolio">Porfolio</a>
+            <a href="#portfolio">Portfolio</a>
           </li>
           <li className="items">
             <a href="#contact">Contact</a>
@@ -52,7 +53,7 @@ function Nav() {
         </ul>
       )}
       <button className="btn" onClick={handleOnClick}>
-        <i class="fas fa-bars"></i>
+        {actMenu ? <i class="fas fa-times"></i> : <i class="fas fa-bars"></i>}
       </button>
     </nav>
   );
