@@ -37,7 +37,7 @@ const dataprojects = [
   },
   {
     title: "Memory Card Game",
-    desc: "",
+    desc: "In this app I used React Hooks in order to save the current open cards in a state and to save the cards that matched in other state, so when the length of the cards array is equal to the length of the matched cards you win",
     img: cardgame,
     repo: "https://github.com/kano96/cardgame",
     url: "",
