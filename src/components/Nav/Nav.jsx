@@ -1,52 +1,31 @@
 import React, { useState, useEffect } from "react";
 import "./Nav.css";
-import menuItems from "./Menuitems";
-import logo from "../../assets/LogoKevin.png";
 
 function Nav() {
   // Actuación del botón de menú para mobile
 
-  const [actMenu, setactMenu] = useState(false);
+  const [actMenu, setActMenu] = useState(false);
+  const [screenW, setScreenW] = useState(window.innerWidth);
   const handleOnClick = (e) => {
-    setactMenu(!actMenu);
+    setActMenu(!actMenu);
   };
-
-  //Nav to sticky on scroll
-  window.addEventListener("scroll", () => {
-    const header = document.getElementById("top");
-    header.classList.toggle("fixed", window.scrollY > 0);
-  });
+  useEffect(() => {});
 
   return (
-    <div className="allnav" id="top">
-      <div className="Nav-container">
-        <nav className="nav">
-          <div className="logo">
-            <a href="index.html" rel="home">
-              <img src={logo} alt="LogoKevin" width="50px" />
-            </a>
-          </div>
-          <div className="menu-icon" onClick={handleOnClick}>
-            <i className={actMenu ? "fas fa-times" : "fas fa-bars"}></i>
-          </div>
-        </nav>
-      </div>
-      <div className={actMenu ? "menu-mobile-container" : "menu"} id="menu">
-        <div className="ul-container">
-          <ul className="menu-active-mobile">
-            {menuItems.map((link, index) => {
-              return (
-                <li key={index}>
-                  <a href={link.url} className={link.cName}>
-                    {link.name}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </div>
-    </div>
+    <nav>
+      {(actMenu || screenW >= 700) && (
+        <ul className="list">
+          <li className="items">Home</li>
+          <li className="items">About</li>
+          <li className="items">Skills</li>
+          <li className="items">Porfolio</li>
+          <li className="items">Contact</li>
+        </ul>
+      )}
+      <button className="btn" onClick={handleOnClick}>
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
   );
 }
 

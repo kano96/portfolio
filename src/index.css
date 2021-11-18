@@ -4,6 +4,7 @@
   --dark-blue: #1f2235;
   --blue: #24263b;
   --red: #ff4a57;
+  --black: rgba(0, 0, 0, 0.883);
 }
 body {
   font-family: var(--poppins);
