@@ -83,9 +83,6 @@ function Mainview() {
             </button>
           </div>
         </div>
-        <div className="profile-img" data-aos="fade-left">
-          <img src={img} alt="profile-kev" />
-        </div>
       </div>
     </section>
   );

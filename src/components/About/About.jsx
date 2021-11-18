@@ -4,7 +4,7 @@ import "./About.css";
 function About() {
   return (
     <div className="About-container" id="about">
-      <div className="info-about" data-aos="fade-up">
+      <div className="info-about">
         <h1>About</h1>
         <p className="p">
           I'm a web developer and programmer living in Quito, Ecuador. I enjoy
