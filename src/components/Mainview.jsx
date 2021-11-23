@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Mainview.css";
-import CV_Es from "../assets/CV_SPANISH.pdf";
+import CV_En from "../assets/CV_ENGLISH.pdf";
 
 const title = "I'm Kevin Torres";
 function Mainview() {
@@ -78,7 +78,7 @@ function Mainview() {
                 <a href="#portfolio">My Portfolio</a>
               </button>
               <button className="port-btn cv-btn">
-                <a href={CV_Es} download="CV_Kevin_Torres">
+                <a href={CV_En} download="CV_Kevin_Torres">
                   Download CV
                 </a>
               </button>
