@@ -55,6 +55,7 @@ function App() {
             bottom: "40px",
             right: "30px",
             transform: "rotate(-45deg)",
+            zIndex: "500",
           }}
         ></i>
       </div>
