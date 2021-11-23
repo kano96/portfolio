@@ -77,7 +77,7 @@ function Mainview() {
                 <a href="#portfolio">My Portfolio</a>
               </button>
               <button className="port-btn cv-btn">
-                <a download href="#">
+                <a download href="../assets/CV_SPANISH.pdf">
                   Download CV
                 </a>
               </button>
