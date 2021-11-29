@@ -1,6 +1,8 @@
 import portfolio from "../../assets/project-img/portfolio.png";
 import cardgame from "../../assets/project-img/cardgame.png";
 import citas from "../../assets/project-img/citas.png";
+import recipes from "../../assets/project-img/recipes.png";
+import weather from "../../assets/project-img/weatherapp.png";
 
 const dataprojects = [
   // {
@@ -20,6 +22,30 @@ const dataprojects = [
   //   stack: ["ReactJS", "Redux", "CSS Modules", "React-Hooks", "React Router"],
   // },
   {
+    title: "Food app",
+    desc: "On this app I bring the info from Spoonacular API to my backend and I create a DB on PostgreSQL in order to store recipes created on the frontend. On the frontend you can filter and sort the recipes",
+    img: recipes,
+    repo: "https://github.com/kano96/foodapp",
+    url: "",
+    stack: [
+      "ReactJS",
+      "Redux",
+      "NodeJS",
+      "Express",
+      "PostgreSQL",
+      "Sequelize",
+      "Jest",
+    ],
+  },
+  {
+    title: "Weather app",
+    desc: "On this app, I bring the info from openweather API. You can search a city and the app will show you the weather in that city. You can also select the city card in order to see more details",
+    img: weather,
+    repo: "https://github.com/kano96/weather-app",
+    url: "https://weather-appkt.netlify.app/",
+    stack: ["ReactJS", "CSS Modules", "React-Hooks"],
+  },
+  {
     title: "Patient Manager",
     desc: "This web app was made using ReactJS, on it you can add appointments with date, hour, symptoms, etc. The appointments are saved in the local storage, so you can't lose them.",
     img: citas,
@@ -37,7 +63,7 @@ const dataprojects = [
   },
   {
     title: "Memory Card Game",
-    desc: "In this app I used React Hooks in order to save the current open cards in a state and to save the cards that matched in other state, so when the length of the cards array is equal to the length of the matched cards you win",
+    desc: "On this app I used React Hooks in order to save the current open cards in a state and to save the cards that matched in other state, so when the length of the cards array is equal to the length of the matched cards you win",
     img: cardgame,
     repo: "https://github.com/kano96/cardgame",
     url: "",

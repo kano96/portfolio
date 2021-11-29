@@ -13,9 +13,11 @@ function Project({ title, url, img, desc, stack, repo }) {
           <a href={repo} target="_blank" rel="noreferrer">
             <i class="fab fa-github"></i>
           </a>
-          <a href={url} target="_blank" rel="noreferrer">
-            <i class="fas fa-external-link-alt"></i>
-          </a>
+          {url && (
+            <a href={url} target="_blank" rel="noreferrer">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          )}
         </div>
         <p className="desc">{desc}</p>
         <div className="stack">
