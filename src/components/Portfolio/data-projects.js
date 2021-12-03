@@ -3,6 +3,7 @@ import cardgame from "../../assets/project-img/cardgame.png";
 import citas from "../../assets/project-img/citas.png";
 import recipes from "../../assets/project-img/recipes.png";
 import weather from "../../assets/project-img/weatherapp.png";
+import movies from "../../assets/project-img/movies.png";
 
 const dataprojects = [
   // {
@@ -13,14 +14,7 @@ const dataprojects = [
   //   url: "",
   //   stack: ["ReactJS", "Redux", "CSS Modules", "React-Hooks", "React Router"],
   // },
-  // {
-  //   title: "Movies App",
-  //   desc: "",
-  //   img: portfolio,
-  //   repo: "",
-  //   url: "",
-  //   stack: ["ReactJS", "Redux", "CSS Modules", "React-Hooks", "React Router"],
-  // },
+  //
   {
     title: "Food app",
     desc: "On this app I bring the info from Spoonacular API to my backend and I create a DB on PostgreSQL in order to store recipes created on the frontend. On the frontend you can filter and sort the recipes",
@@ -44,6 +38,14 @@ const dataprojects = [
     repo: "https://github.com/kano96/weather-app",
     url: "https://weather-appkt.netlify.app/",
     stack: ["ReactJS", "CSS Modules", "React-Hooks"],
+  },
+  {
+    title: "Movies App",
+    desc: "On this app, I bring the info from iMDB API. You can search a film and the app will show all the results that include your search. You can, select the film card in order to see more details and add the movie to favorites",
+    img: movies,
+    repo: "https://github.com/kano96/moviesapp",
+    url: "",
+    stack: ["ReactJS", "Redux", "CSS Modules", "React-Hooks", "React Router"],
   },
   {
     title: "Patient Manager",
