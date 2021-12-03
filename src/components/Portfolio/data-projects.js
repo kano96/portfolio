@@ -41,11 +41,11 @@ const dataprojects = [
   },
   {
     title: "Movies App",
-    desc: "On this app, I bring the info from iMDB API. You can search a film and the app will show all the results that include your search. You can, select the film card in order to see more details and add the movie to favorites",
+    desc: "On this app, I bring info from iMDB API. You can search a film and it will show all the results that include your search. You can select the film card in order to see more details and add the movie to favorites",
     img: movies,
     repo: "https://github.com/kano96/moviesapp",
     url: "",
-    stack: ["ReactJS", "Redux", "CSS Modules", "React-Hooks", "React Router"],
+    stack: ["ReactJS", "Redux", "React-Hooks", "React Router"],
   },
   {
     title: "Patient Manager",
