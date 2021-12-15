@@ -4,7 +4,7 @@ import citas from "../../assets/project-img/citas.png";
 import recipes from "../../assets/project-img/recipes.png";
 import weather from "../../assets/project-img/weatherapp.png";
 import movies from "../../assets/project-img/movies.png";
-
+import shop from "../../assets/project-img/shopping-cart.png";
 const dataprojects = [
   // {
   //   title: "GOT houses",
@@ -38,6 +38,14 @@ const dataprojects = [
     repo: "https://github.com/kano96/weather-app",
     url: "https://weather-appkt.netlify.app/",
     stack: ["ReactJS", "CSS Modules", "React-Hooks"],
+  },
+  {
+    title: "Shopping cart",
+    desc: "This is a shopping cart where you can add/remove items and see the total amount of money you have to pay, it uses Material UI and Styled Components. ",
+    img: shop,
+    repo: "https://github.com/kano96/shopping-cart",
+    url: "https://shopping-cart-react-appk.netlify.app/",
+    stack: ["ReactJS", "TypeScript", "React-Hooks"],
   },
   {
     title: "Movies App",

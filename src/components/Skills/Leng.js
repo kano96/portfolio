@@ -8,6 +8,7 @@ import node from "../../assets/skills/node.png";
 import express from "../../assets/skills/express.png";
 import jest from "../../assets/skills/jest.png";
 import postgres from "../../assets/skills/postgresql.png";
+import typescript from "../../assets/skills/typescript.png";
 
 export const leng = [
   {
@@ -18,6 +19,12 @@ export const leng = [
   },
   { url: css, label: "CSS", class: "skill-icon", labelclass: "label" },
   { url: js, label: "JavaScript", class: "skill-icon", labelclass: "label" },
+  {
+    url: typescript,
+    label: "TypeScript",
+    class: "skill-icon",
+    labelclass: "label",
+  },
   { url: python, label: "Python", class: "skill-icon", labelclass: "label" },
   { url: react, label: "ReactJS", class: "skill-icon", labelclass: "label" },
   { url: redux, label: "Redux", class: "skill-icon", labelclass: "label" },
